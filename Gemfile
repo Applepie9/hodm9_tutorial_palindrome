@@ -10,3 +10,4 @@ gem 'minitest-reporters', '1.2.0'
 gem "rake", "~> 13.0"
 
 gem "minitest", "~> 5.0"
+gem 'pry'

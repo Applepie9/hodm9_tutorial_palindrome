@@ -4,21 +4,22 @@ require_relative "hodm9_tutorial_palindrome/version"
 
 module Hodm9TutorialPalindrome
 
-    # Returns true for a palindrome, false otherwise.
-    def palindrome?
-      if processed_content.empty?
-        false
-      else
-        processed_content == processed_content.reverse
-      end
+  # Returns true for a palindrome, false otherwise.
+  def palindrome?
+    # binding.pry
+    if processed_content.empty?
+      false
+    else
+      processed_content == processed_content.reverse
     end
+  end
 
-    private
+  private
 
-      # Returns content for palindrome testing.
-      def processed_content
-        to_s.scan(/[a-z\d]/i).join.downcase
-      end
+  # Returns content for palindrome testing.
+  def processed_content
+    to_s.scan(/[a-z\d]/i).join.downcase
+  end
 end
 
 
